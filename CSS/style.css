@@ -1,5 +1,6 @@
 .wf-nicomoji { font-family: "Nico Moji"; }
 
-body {
-    background: linear-gradient(blue,rgb(0, 115, 128),white);
+.background_test {
+    background: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
 }
+
