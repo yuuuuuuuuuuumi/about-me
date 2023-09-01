@@ -1,1 +1,4 @@
-*{background-color: #F5DEB3}
+*{
+    background-color :hsl(43, 61%, 83%);
+    background-attachment: fixed;
+}
