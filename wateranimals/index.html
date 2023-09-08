@@ -1,16 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
-<link rel="stylesheet" href="./main-01.css">
+<link rel="stylesheet" href="./style.css">
+
+
 
 <head>
     <meta charset="UTF-8">
+
+    <title>人気な動物</title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>水生動物</title>
+
+    <meta name="description" content="About me のホームページです。">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="./wateranimals/main-01.css">
+    <link rel="stylesheet" href="./rikujyou/rikujyou.css">
+    <link rel="stylesheet" href="./contact/contact.css">
+    <link rel="stylesheet" href="./another/main-02.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./about/about.css">
 </head>
+
+<header>
+    <ul>
+        <center>
+            <li>陸上の動物</li>
+            <li>水生動物</li>
+            <li>ペットの動物</li>
+        </center>
+    </ul>
+</header>
 
 
 <body>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <center>
+        <header class="header">
+            <h1>人気な動物を紹介します！</h1>
+
+        </header>
+    </center>
+</body>
+
+
+<main>
+    <center>
+        <h3>
+            <li><a href="./about/index.html"><input type="button" value="自己紹介" onClick="color1()"></a></li>
+        </h3>
+    </center>
+</main>
+
+
+<nav>
+    <li><a href="./rikujyou/index.html"><input type="button" value="陸上編" onClick="color1()"></a></li>
+    <marquee>
+        <img src="../../img/feretto.jpg" alt="フェレットの写真" width="300" height="450">
+        <img src="../img/panda.jpg" alt="パンダの写真" width="300" height="450">
+        <img src="../img/fenekku.jpg" alt="フェネックの写真" width="450" height="300">
+        <img src="../img/simarisu.jpg" alt="シマリスの写真" width="450" height="300">
+        <img src="../img/unnpyou.jpg" alt="雲表の写真" width="450" height="300">
+        <img src="../img/sunaneco.jpg" alt="スナネコの写真" width="400" height="400">
+
+
+    </marquee>
+</nav>
+
+
+<nav>
+    <li><a href="./wateranimals/index.html"><input type="button" value="水生動物" onClick="color1()"></a></li>
     <marquee>
         <img src="../img/pengin.png" alt="ペンギンの写真" width="350" height="350">
         <img src="../img/rakko.jpg" alt="ラッコの写真" width="450" height="300">
@@ -19,136 +86,24 @@
         <img src="../img/shati.jpg" alt="シャチの写真" width="550" height="300">
         <img src="../img/azarasi.jpg" alt="アザラシの写真" width="450" height="300">
     </marquee>
-</body>
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-<nav>
-    <center>
-        <h1>ペンギン</h1>
-        <img src="../img/pengin.png" alt="ペンギンの写真" width="400" height="400">
-
-        <h2>ペンギンの生態</h2>
-        <h4>
-            <p>鳥綱ペンギン目に属する種の総称</p>
-            <p>寿命は野生下だと20年弱のものが多く、飼育下では最長39年が記録されていますが、平均すると20年程度</p>
-            <p>南半球に広く生息しており、寒い地域では南極大陸、暖かい地域ではガラパゴス諸島など、その種によって生活している地域は異なります。</p>
-            <p>世界に住むペンギンは18種!</p>
-        </h4>
-    </center>
 </nav>
 
-<br>
-<br>
-<br>
-<br>
-<br>
 
 <nav>
-    <center>
-        <h1>ラッコ</h1>
-        <img src="../img/rakko.jpg" alt="ラッコの写真" width="450" height="300">
-
-        <h2>ラッコの生態</h2>
-        <h4>
-            <p>「食肉目イタチ科ラッコ属」に分類される海洋哺乳類</p>
-            <p>岩場のある海岸から1キロ圏内、また海藻が多く茂っている沿岸部に生息しています。</p>
-            <p>ラッコの食性は肉食で、1日に体重の1～2割ほどのエサを食べます。</p>
-            <p>寿命はオスで10～15年、メスで15～20年ほどです。</p>
-        </h4>
-    </center>
+    <li><a href="./another/index.html"><input type="button" value="番外編" onClick="color1()"></a></li>
+    <marquee>
+        <img src="../img/dog.jpg" alt="犬の写真" width="500" height="340">
+        <img src="../img/cat.jpg" alt="ねこの写真" width="500" height="340">
+        <img src="../img/kawauso.jpg" alt="カワウソの写真" width="550" height="370">
+        <img src="../img/harinezumi.jpg" alt="ハリネズミの写真" width="550" height="370">
+        <img src="../img/usagi.jpg" alt="ウサギの写真" width="550" height="370">
+    </marquee>
 </nav>
 
-<br>
-<br>
-<br>
-<br>
-<br>
 
 <nav>
-    <center>
-        <h1>ホッキョクグマ</h1>
-        <img src="../img/hokkyokuguma.jpg" alt="ホッキョクグマの写真" width="550" height="350">
-
-        <h2>ホッキョクグマの生態</h2>
-        <h4>
-            <p>哺乳綱食肉目クマ科クマ属</p>
-            <p>ホッキョクグマは「陸上最大の肉食獣」といわれており、<br>
-                アザラシ・セイウチ・シロイルカ・魚・水鳥などを捕食します。</p>
-            <p>体長はオスが2～2.5m、メスが1.8～2m</p>
-        </h4>
-    </center>
+    <li><a href="./contact/index.html"><input type="button" value="お問い合わせ" onClick="color1()"></a></li>
 </nav>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-
-<nav>
-    <center>
-        <h1>イルカ</h1>
-        <img src="../img/iruka.jpg" alt="イルカの写真" width="550" height="300">
-
-        <h2>イルカの生態</h2>
-        <h4>
-            <p>イルカは人間と共通する部分を多く持っている海洋生物</p>
-            <p>イルカは体重に占める脳の重さが人間に次いで重い(大きい)生物です。</p>
-            <p>イルカは片方の脳だけを眠らせながらもう片方の脳で身体を動かし続けられる生物なのですが、<br>
-                このとき片方の目は瞑っています。</p>
-        </h4>
-    </center>
-</nav>
-
-<br>
-<br>
-<br>
-<br>
-<br>
-
-<nav>
-    <center>
-        <h1>シャチ</h1>
-        <img src="../img/shati.jpg" alt="シャチの写真" width="550" height="300">
-
-        <h2>シャチの生態</h2>
-        <h4>
-            <p>「哺乳綱鯨偶蹄目マイルカ科シャチ属」に分類される海洋性の哺乳類</p>
-            <p>シャチは自身の体長より遥かに大きいシロナガスクジラなども捕食の対象としています。</p>
-            <p>海洋哺乳類の中でも高い知能を持つ生物</p>
-        </h4>
-    </center>
-</nav>
-
-<br>
-<br>
-<br>
-<br>
-<br>
-
-<nav>
-    <center>
-        <h1>アザラシ</h1>
-        <img src="../img/azarasi.jpg" alt="アザラシの写真" width="450" height="300">
-
-        <h2>アザラシの生態</h2>
-        <h4>
-            <p>ネコ目アザラシ科に分類される海棲哺乳類</p>
-            <p>アザラシと一口に言ってもその種はさまざまで、120cm、50kg程度のワモンアザラシから<br>
-                600cm、5,000kgにもなるミナミゾウアザラシまで、体格は多種多様。</p>
-            <p>得意なのは水中、苦手なのは陸上</p>
-            </h4>
-    </center>
-</nav>
 
 </html>
