@@ -2,3 +2,11 @@
     background-color : #d1e8eb;
     background-attachment: fixed;
 }/* /aboutだけで使うcss */
+
+
+.container {
+	width: 100%;
+	height: 32.6vw;
+	background: url('../img/back-01.png' ) repeat-x;
+	background-size: 60%;
+}
