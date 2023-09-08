@@ -1,1 +1,4 @@
-/* /aboutだけで使うcss */
+*{
+    background-color : #d1e8eb;
+    background-attachment: fixed;
+}/* /aboutだけで使うcss */
