@@ -3,21 +3,7 @@
 
 <link rel="stylesheet" href="./style.css">
 
-<script type="text/javascript">
-    <!--
-    
-    function color1(){
-    
-        document.bgColor = "#808080";
-        document.fgColor = "#800000"; 
-        document.linkColor = "#800000"; 
-        document.vlinkColor = "#cd853f"; 
-        document.alinkColor = "#808080"; 
-    
-    }
-    
-    
-</script>
+
 
 <head>
     <meta charset="UTF-8">
@@ -28,6 +14,10 @@
 
     <meta name="description" content="About me のホームページです。">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <scrip src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
     <link rel="stylesheet" href="./about/about.css">
     <link rel="stylesheet" href="./css/top.css">
     <link rel="stylesheet" href="./css/main-01.css">
@@ -37,6 +27,12 @@
 </head>
 
 <body>
+    <link rel="stylesheet" type="text/css"
+        href="./style.css">
+    </head>
+    
+    <body>
+        
     <br>
     <br>
     <br>
@@ -75,20 +71,34 @@
 
 
 <nav>
-    <li><a href="./wateranimals/index.html">
-        <script>
-        var str = new String("水生動物");
-        document.write(str.big());
-        </script>
-    </a></li>
-    <marquee>
-        <img src="../img/pengin.png" alt="ペンギンの写真" width="350" height="350">
-        <img src="../img/rakko.jpg" alt="ラッコの写真" width="450" height="300">
-        <img src="../img/hokkyokuguma.jpg" alt="ホッキョクグマの写真" width="550" height="350">
-        <img src="../img/iruka.jpg" alt="イルカの写真" width="550" height="300">
-        <img src="../img/shati.jpg" alt="シャチの写真" width="550" height="300">
-        <img src="../img/azarasi.jpg" alt="アザラシの写真" width="450" height="300">
-    </marquee>
+    <li><a href="./wateranimals/index.html">水生動物</a></li>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div><img src="../img/pengin.png" alt="ペンギンの写真" width="350" height="350"></div>
+            </div>
+            <div class="swiper-slide">
+                <div><img src="../img/rakko.jpg" alt="ラッコの写真" width="450" height="300"></div>
+            </div>
+            <div class="swiper-slide">
+                <div><img src="../img/hokkyokuguma.jpg" alt="ホッキョクグマの写真" width="550" height="350"></div>
+            </div>
+            <div class="swiper-slide">
+                <div><img src="../img/iruka.jpg" alt="イルカの写真" width="550" height="300"></div>
+            </div>
+                <div class="swiper-slide">
+                <div><img src="../img/shati.jpg" alt="シャチの写真" width="550" height="300"></div>
+            </div>
+                <div class="swiper-slide">
+                <div><img src="../img/azarasi.jpg" alt="アザラシの写真" width="450" height="300"></div>
+            </div>
+        </div>
+        
+        <div class="swiper-pagination"></div>
+        
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
 </nav>
 
 
