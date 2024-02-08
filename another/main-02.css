@@ -114,7 +114,7 @@ body, html {
 .hamburger-menu .bar {
     height: 3px;
     width: 100%;
-    background-color: #fff;
+    background-color: #5f2929;
     transition: all 0.3s;
 }
 
