@@ -35,3 +35,191 @@
 .E4 {
 	font-family: "Comic Sans MS";
 }
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.hamburger-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    z-index: 1000; /* メニューが他の要素の上に表示されるように */
+}
+
+.hamburger-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger-button span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #000;
+    border-radius: 3px;
+    z-index: 1000;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+}
+
+.navigation {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%; /* メニューの幅 */
+    height: 100%;
+    background-color: #f3f3f3; /* メニューの背景色 */
+    z-index: 900;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-top: 3rem; /* メニュー項目とハンバーガーボタンとの間隔 */
+}
+
+.navigation ul li a {
+    display: block;
+    padding: 1rem;
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd; /* リンクの境界線 */
+}
+
+.hamburger-menu {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 26px;
+}
+
+.hamburger-menu .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    transition: all 0.3s;
+}
+
+.menu-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 900;
+}
+
+.menu-overlay {
+    display: none; /* メニューが非表示の時 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明の黒 */
+    z-index: 999; /* メニューが他の要素より前面に来るように */
+}
+
+.menu-container {
+    position: relative;
+    margin: 100px auto;
+    width: 250px;
+    text-align: center;
+}
+
+.menu-title {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+/* メニュー項目の背景色を黒に設定 */
+.menu-items li a {
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明の黒 */;
+    color: white;
+    padding: 10px;
+    margin: 5px 0; /* 項目間のスペース */
+}
+
+/* メニュータイトルのスタイル修正 */
+.menu-title {
+    color: white;
+    padding: 10px; /* タイトルのパディングを設定 */
+    background-color: white; /* タイトルの背景色を黒に設定 */
+    margin-bottom: 15px; /* タイトルとメニュー項目の間隔 */
+}
+
+.menu-items {
+    list-style-type: none;
+    padding: 0;
+    color: #fff;
+}
+
+.menu-items li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    margin: 10px 0;
+}
+
+/* バツ印のスタイル */
+.hamburger-menu.open .top-bar {
+    transform: translateY(11px) rotate(45deg);
+}
+
+.hamburger-menu.open .middle-bar {
+    opacity: 0;
+}
+
+.hamburger-menu.open .bottom-bar {
+    transform: translateY(-11px) rotate(-45deg);
+}
+
+/* メニューが表示されている時のスタイル */
+.menu-overlay.show {
+    display: block;
+}
+
+/* その他のスタイルは前のコードを使用 */
+
+/* メニューコンテナの背景色を透明に設定 */
+.menu-container {
+    background-color: transparent;
+}
+
+/* ハンバーガーメニューがクローズアイコンになった時のスタイル */
+.hamburger-menu.open .top-bar {
+    transform: rotate(45deg);
+    position: relative;
+    top: 8px;
+}
+
+.hamburger-menu.open .middle-bar {
+    opacity: 0;
+}
+
+.hamburger-menu.open .bottom-bar {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -8px;
+}
