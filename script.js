@@ -24,3 +24,29 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
 })
+
+document.addEventListener("DOMContentLoaded", function () {
+  var hamburgerMenu = document.getElementById("hamburger-menu");
+  var menuOverlay = document.getElementById("menu-overlay");
+  var closeMenu = document.getElementById("close-menu");
+
+  hamburgerMenu.addEventListener("click", function () {
+    menuOverlay.classList.toggle("show");
+    hamburgerMenu.classList.toggle("open");
+  });
+
+  closeMenu.addEventListener("click", function () {
+    menuOverlay.classList.remove("show");
+    hamburgerMenu.classList.remove("open");
+  }); 
+
+  // メニュー項目のリンクを設定
+  var menuItems = document.querySelectorAll(".menu-items a");
+  menuItems.forEach(function (item) {
+    item.addEventListener("click", function () {
+      // リンク先にジャンプする前にメニューを閉じる
+      menuOverlay.classList.remove("show");
+      hamburgerMenu.classList.remove("open");
+    });
+  });
+});
